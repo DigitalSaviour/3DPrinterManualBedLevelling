@@ -1,0 +1,59 @@
+; Ender 5 Pro - Double-Pass Bed Leveling
+
+M140 S60
+M190 S60
+
+G28
+G90
+G1 Z10 F600
+
+; ---- PASS 1 ----
+G1 X30 Y30 F6000      ; FL
+G1 Z0.2 F600
+M0 Pass 1: FL
+
+G1 Z10 F600
+G1 X200 Y30 F6000     ; FR
+G1 Z0.2 F600
+M0 Pass 1: FR
+
+G1 Z10 F600
+G1 X200 Y200 F6000    ; RR
+G1 Z0.2 F600
+M0 Pass 1: RR
+
+G1 Z10 F600
+G1 X30 Y200 F6000     ; RL
+G1 Z0.2 F600
+M0 Pass 1: RL
+
+; ---- PASS 2 ----
+G1 Z10 F600
+G1 X30 Y30 F6000      ; FL
+G1 Z0.2 F600
+M0 Pass 2: FL
+
+G1 Z10 F600
+G1 X200 Y30 F6000     ; FR
+G1 Z0.2 F600
+M0 Pass 2: FR
+
+G1 Z10 F600
+G1 X200 Y200 F6000    ; RR
+G1 Z0.2 F600
+M0 Pass 2: RR
+
+G1 Z10 F600
+G1 X30 Y200 F6000     ; RL
+G1 Z0.2 F600
+M0 Pass 2: RL
+
+; ---- Center ----
+G1 Z10 F600
+G1 X115 Y115 F6000
+G1 Z0.2 F600
+M0 Final center check
+
+G1 Z10 F600
+G1 X0 Y0 F6000
+M117 Double-pass leveling complete
