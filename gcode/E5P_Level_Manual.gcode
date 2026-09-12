@@ -1,5 +1,6 @@
 ; Ender 5 Pro - Manual Bed Leveling Routine (Stock Creality Firmware Compatible)
 
+M501                 ; Load saved settings from EEPROM
 M140 S60              ; Set bed temp to 60C
 M190 S60              ; Wait for bed to reach temp
 
@@ -40,6 +41,11 @@ G1 X115 Y115 F6000
 G1 Z0.2 F600
 M117 "Center of bed"
 M0 "Adjust center, then click Continue."
+
+; --- Save Phase ---
+G4 S1                ; Allow LCD to refresh after pause
+M117 "Saving Z-offset..."
+M500                 ; Save new settings to EEPROM
 
 ; ---- Finish ----
 G1 Z10 F600
