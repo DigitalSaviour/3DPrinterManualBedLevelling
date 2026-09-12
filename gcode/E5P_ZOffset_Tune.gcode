@@ -1,5 +1,6 @@
-; Ender 5 Pro - Z Offset Tuning
+; Ender 5 Pro - Z Offset Tuning (Persistent Version)
 
+M501                 ; load saved settings from EEPROM
 M140 S60
 M190 S60
 
@@ -13,6 +14,9 @@ G1 Z0.2 F600
 
 M117 Adjust Z-offset using baby-stepping
 M0 Use paper test, adjust Z until perfect, then continue
+
+M500                 ; save new settings to EEPROM
+M117 Z-offset saved
 
 G1 Z10 F600
 G1 X0 Y0 F6000
