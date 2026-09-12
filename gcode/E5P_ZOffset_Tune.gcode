@@ -12,12 +12,14 @@ G1 Z10 F600
 G1 X115 Y115 F6000
 G1 Z0.2 F600
 
-M117 Adjust Z-offset using baby-stepping
-M0 Use paper test, adjust Z until perfect, then continue
+M117 "Adjust Z-offset using baby-stepping"
+M0 "Use paper test, adjust Z until perfect, then continue"
 
+M117 "Saving new Z-offset..."
 M500                 ; save new settings to EEPROM
-M117 Z-offset saved
 
+M117 "Z-offset saved"
 G1 Z10 F600
 G1 X0 Y0 F6000
-M117 Z-offset tuning complete
+
+M117 "Z-offset tuning complete"
