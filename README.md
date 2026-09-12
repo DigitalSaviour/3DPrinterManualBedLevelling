@@ -1,7 +1,3 @@
-Here you go, Lee — a clean, professional **README.md** tailored for the exact GitHub folder you have open   [Current page](citation-section://10047485/4). It’s structured, clear, and ready to drop straight into your repo.
-
----
-
 # **Ender‑5 Pro Bed Levelling Toolkit**
 A collection of G‑code utilities designed to make bed levelling, Z‑offset tuning, mesh generation, and nozzle preparation simple and repeatable on the **Creality Ender‑5 Pro**.
 
@@ -102,15 +98,3 @@ If your printer uses a modified bed size, adjust coordinates accordingly.
 - Bed temperature is set to **60 °C** for thermal stability.  
 - Nozzle height is set to **0.2 mm**, ideal for paper‑test levelling.  
 - Safe Z‑lift is used between moves to avoid bed clips or curled filament.
-
----
-
-If you want, I can also generate:
-
-- A **preview image** for the README  
-- A **version badge**  
-- A **GitHub release description**  
-- A **folder structure diagram**  
-- A **printer‑specific section** for CR‑Touch firmware builds
-
-Just tell me what you want added.
